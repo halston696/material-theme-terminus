@@ -1,1 +1,1 @@
-# material-theme-terminus
+![material-theme-terminus](preview.png)
