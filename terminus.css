@@ -1,0 +1,58 @@
+/* change "--theme-color" and "--theme-bg", below to fit your needs */
+
+* { --theme-color: #8bc34a; --theme-bg: #212121; background-color: var(--theme-bg) !important; }
+
+app-root > .content .tab-bar{
+    border-top-color: var(--theme-bg) !important;
+}
+app-root > .content .tab-bar tab-header{
+    border-color: transparent !important;
+}
+app-root > .content .tab-bar tab-header.active{
+    border-top-color: transparent !important;
+    border-bottom: 1px solid var(--theme-color) !important;
+}
+app-root > .content .tab-bar > .tabs tab-header .index{
+    display: none !important;
+}
+app-root > .content .tab-bar > .tabs tab-header button{
+    background: transparent !important; opacity: 1 !important;
+}
+app-root > .content .tab-bar > .tabs tab-header button:hover{
+    background-color: transparent !important; opacity: 1 !important;
+}
+app-root > .content .tab-bar > .tabs tab-header.active button{
+    color: var(--theme-color);
+}
+
+app-root > .content.tabs-on-top  .tab-bar{
+    border-bottom-color: var(--theme-bg) !important;
+}
+app-root > .content.tabs-on-top .tab-bar tab-header{
+    border-color: transparent !important;
+}
+app-root > .content.tabs-on-top .tab-bar tab-header.active{
+    border-top-color: transparent !important;
+    border-bottom: 1px solid var(--theme-color) !important;
+}
+
+
+settings-tab > ngb-tabset > .nav > .nav-item > .nav-link.active {
+    border-color: var(--theme-bg) !important;
+    color: var(--theme-color) !important;
+}
+
+.form-control{ border-color: #444 !important; }
+.form-control:focus{ border-color: var(--theme-color) !important; }
+
+[ngbradiogroup] > label.active { color: var(--theme-color)!important; }
+
+.btn-secondary:hover{ border-color: #444 !important; }
+.btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle { border-color: #444 !important; }
+
+multi-hotkey-input .item{ border-color: var(--theme-color) !important; }
+.btn-outline-primary, .btn-outline-info{ border-color: var(--theme-color) !important; color: var(--theme-color) !important; }
+
+[title="New terminal"]{ display: none !important; } /* hide the + button and use keyboard shortcut (my preference, change it if you want) */
+
+.nav-tabs { border-bottom-color: transparent !important; } /* fix for what ever stupid reason the settings panal left list has a blue border bottom */
